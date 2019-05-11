@@ -314,6 +314,6 @@ def big_shoe_rebounds
           end
         end
       end
-new_hash
+new_hash.split
   binding.pry
   end
