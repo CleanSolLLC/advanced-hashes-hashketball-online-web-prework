@@ -314,6 +314,6 @@ def big_shoe_rebounds
           end
         end
       end
-new_hash
+first_value = new_hash[0].to_s
   binding.pry
   end
