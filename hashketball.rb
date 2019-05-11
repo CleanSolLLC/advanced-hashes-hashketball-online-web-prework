@@ -308,12 +308,12 @@ def big_shoe_rebounds
             shoe_size.store(name, shoe)
             #new_hash creates a hash sorttd by shoe size (largest first) with a key of player' name
             new_hash = shoe_size.sort_by {|name, shoe| shoe}.reverse
-            #binding.pry
+            binding.pry
             end
 
           end
         end
       end
 new_hash
-  binding.pry
+  #binding.pry
   end
