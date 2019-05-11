@@ -301,7 +301,7 @@ def big_shoe_rebounds
 
 
           data.each do |player, player_stats|
-            binding.pry
+            #binding.pry
 
             name = player
             shoe = player_stats[:shoe]
