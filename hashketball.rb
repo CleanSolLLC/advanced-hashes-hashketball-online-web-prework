@@ -287,6 +287,39 @@ def player_stats(name)
 player_staistics
   end
 
+  def num_rebounds(name)
+
+    rebound_number = 0
+
+    game_hash.each do |location, team_info|
+
+      team_info.each do |attribute, data|
+
+
+        if attribute == :players
+
+
+          data.each do |player, player_stats|
+
+
+            if player == name
+
+            rebound_number = player_stats[:rebounds]
+
+                  end
+
+          end
+        end
+      end
+    end
+  rebound_number
+  end
+
+
+
+
+
+
 def big_shoe_rebounds
 
     shoe_size = {}
@@ -315,5 +348,7 @@ def big_shoe_rebounds
         end
       end
 first_value = new_hash[0].to_a
+player_with_largest_foot = first_value[0]
+num_rebounds(player_with_largest_foot)
   binding.pry
   end
