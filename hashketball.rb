@@ -314,6 +314,6 @@ def big_shoe_rebounds
           end
         end
       end
-new_hash[0].to_s(",")
+new_hash
   binding.pry
   end
