@@ -301,12 +301,17 @@ def big_shoe_rebounds
 
 
           data.each do |player, player_stats|
-            binding.pry
+
 
             name = player
             shoe = player_stats[:shoe]
-            shoe_size.store(name, shoe)
+            rebounds = player_stats[:rebounds]
+            shoe_size = ["player_name"] => name
+            shoe_size = ["player_shoe"] => shoe
+            shoe_size = ["player_rebounds"] => rebounds
+              binding.pry
             new_hash = shoe_size.sort_by {|name, shoe| shoe}.reverse
+
             end
 
             #shoe_size.sort
@@ -319,3 +324,4 @@ big_foot = new_hash.to_s
 
 
   end
+namr
